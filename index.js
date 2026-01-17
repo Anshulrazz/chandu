@@ -16,7 +16,7 @@ connectDB();
 
 // Middleware
 const corsOptions = {
-    origin: ["http://localhost:3000","http://localhost:3000/",],
+    origin: ["https://www.samraattrader.com/","https://samraattrader.com","https://samraattrader.com/","https://www.samraattrader.com"],
     credentials: true,
     methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
     allowedHeaders: ['Content-Type'],
@@ -75,4 +75,5 @@ console.log('Local IP addresses:', myip);
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
     console.log(`Server running at ==> http://${myip}:${PORT}`);
+
 });
